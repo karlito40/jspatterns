@@ -8,7 +8,8 @@ define(function(require){
     return {
         createMedia: function(type, attributes) {
             
-            return new media[type](attributes);
+            var MediaType = media[type];
+            return new MediaType(attributes);
         }
     }
 });
