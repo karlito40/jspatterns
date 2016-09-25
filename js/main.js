@@ -1,10 +1,11 @@
 require(
-    ['js/factory/init'], 
-    function(factory) {
+    ['js/factory/init', 'js/pubsub/init'], 
+    function(factory, pubsub) {
         'use strict';
 
         var examples = {
-            factory: factory
+            factory: factory,
+            pubsub: pubsub
         };
 
         window.runExample = function(example) {
